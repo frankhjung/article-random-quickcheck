@@ -1,6 +1,6 @@
 ---
 title: 'Thoughts on Random Number Generators - QuickCheck'
-author: 'frankhjung@linux.com'
+author: '[Frank Jung](https://www.linkedin.com/in/frankjung/)'
 geometry: margin=25mm
 header-includes:
   - \usepackage{fancyhdr}
@@ -8,8 +8,7 @@ header-includes:
   - \pagestyle{fancy}
   - \fancyhead[L]{\includegraphics[height=7.5mm]{images/franklyspeaking.png}}
   - \fancyfoot[L]{© Frank H Jung 2021-2026}
-date: '15 January 2026'
-
+date: '15 October 2020'
 ---
 
 ![Photo by Frank H Jung](images/banner.png)
