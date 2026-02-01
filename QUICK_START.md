@@ -3,6 +3,7 @@
 ## Commands
 
 ### Dependency Management
+
 ```bash
 uv sync --extra dev        # Install all dependencies (with dev tools)
 uv sync                    # Install only production dependencies
@@ -11,7 +12,8 @@ uv.lock                    # ✓ Commit this file for reproducible builds
 
 ### Code Quality
 
-**Check without fixing:**
+#### Check without fixing
+
 ```bash
 make lint
 # or
@@ -19,7 +21,8 @@ uv run ruff check src/
 uv run ruff format --check src/
 ```
 
-**Fix and format automatically:**
+#### Fix and format automatically
+
 ```bash
 make check
 # or
@@ -28,6 +31,7 @@ uv run ruff format src/
 ```
 
 ### Testing
+
 ```bash
 make test
 # or
@@ -36,6 +40,7 @@ uv run pytest src/ -v --cov     # With coverage
 ```
 
 ### One-line Validation
+
 ```bash
 make lint && make test
 # CI/CD: uv sync --extra dev && make lint && make test
@@ -58,7 +63,7 @@ make lint && make test
 
 2. **Makefile**
    - Added: `make sync`, `make lint`, `make check`, `make test`
-   - All targets use `uv run` for consistency
+   - Python targets use `uv run` for consistency
 
 3. **src/test_example.py**
    - Removed deprecated UTF-8 encoding declaration
@@ -68,7 +73,7 @@ make lint && make test
 ## Default Targets
 
 ```bash
-make              # builds quickcheck.html (pandoc)
+make              # builds public/index.html and public/quickcheck.pdf (via pandoc)
 make check        # format and fix code
 make lint         # check code style (no fixes)
 make test         # run pytest suite
@@ -87,13 +92,15 @@ make clean        # remove build artifacts (public/)
 
 ## Integration Tips
 
-**Pre-commit hook:**
+### Pre-commit hook
+
 ```bash
 #!/bin/bash
 make lint
 ```
 
-**GitHub Actions:**
+### GitHub Actions
+
 ```yaml
 - name: Lint and test
   run: uv sync --extra dev && make lint && make test

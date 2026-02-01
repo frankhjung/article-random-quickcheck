@@ -10,12 +10,14 @@ See also <https://frankhjung.blogspot.com/>.
 
 ## Render to HTML
 
-To render a HTML or PDF version of this article, run
+To render an HTML or PDF version of this article, run:
 
 ```bash
 make quickcheck.html
 make quickcheck.pdf
 ```
+
+Or simply run `make` to build both.
 
 This will generate documents into the `public` directory, which is used to
 publish rendered pages.
@@ -31,7 +33,7 @@ is a program to count words from STDIN like the
 
 Some examples using [Hypothesis](https://hypothesis.readthedocs.io/en/latest/).
 
-To use strategies try:
+To use strategies, try:
 
 ```python
 from hypothesis.strategies import lists, integers
@@ -45,9 +47,9 @@ Out[3]: [22, -108, 6137, -15222, -6307496272059922727, -125, -4, -30, 20459]
 
 The `example` method should only be used interactively.
 
-### Setup Environment with UV
+### Set up environment with UV
 
-Initialize the project environment with all dependencies:
+Initialise the project environment with all dependencies:
 
 ```bash
 uv sync --extra dev
@@ -79,7 +81,7 @@ make test
 To get runtime statistics:
 
 ```bash
-pytest -v --hypothesis-show-statistics src/test_example.py
+uv run pytest -v --hypothesis-show-statistics src/test_example.py
 ```
 
 #### Results

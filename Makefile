@@ -12,12 +12,22 @@ default: $(PROJECT).html $(PROJECT).pdf
 
 .md.html:
 	@mkdir -p public
-	@$(PANDOC) --css article.css --to html4 --output public/$@ --embed-resources --standalone --section-divs $<
-	@mv public/$@ public/index.html
+	@$(PANDOC) \
+		--from=gfm --to html5 \
+		--embed-resources --standalone \
+		--css article.css \
+		--output public/index.html \
+		$<
 
 .md.pdf:
 	@mkdir -p public
-	@$(PANDOC) --css article.css --to latex --output public/$@ --embed-resources --standalone --section-divs $<
+	@$(PANDOC) \
+		--include-in-header preamble.tex \
+		--from=markdown --pdf-engine=xelatex \
+		--css article.css \
+		--toc \
+		--output public/$@ \
+		$<
 
 .PHONY: check
 check:

@@ -21,6 +21,5 @@ references
 .Rhistory
 *.Rproj
 .Rproj.user
-*.tex
 venv/
 *.zip

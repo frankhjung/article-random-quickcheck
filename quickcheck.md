@@ -1,17 +1,10 @@
 ---
 title: 'Thoughts on Random Number Generators - QuickCheck'
 author: '[Frank Jung](https://www.linkedin.com/in/frankjung/)'
-geometry: margin=25mm
-header-includes:
-  - \usepackage{fancyhdr}
-  - \usepackage{graphicx}
-  - \pagestyle{fancy}
-  - \fancyhead[L]{\includegraphics[height=7.5mm]{images/franklyspeaking.png}}
-  - \fancyfoot[L]{© Frank H Jung 2021-2026}
 date: '15 October 2020'
 ---
 
-![Photo by Frank H Jung](images/banner.png)
+![](images/banner.png)
 
 [Part 1](https://github.com/frankhjung/article-random-bash) of this series
 explored pseudo-random values—statistically random values derived from a known
