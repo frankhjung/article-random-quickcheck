@@ -295,17 +295,14 @@ traditional testing approaches might miss.
 * [Lorem Ipsum](https://www.lipsum.com/)
 * [Property Testing](https://en.wikipedia.org/wiki/Property_testing)
 * [Python Hypothesis](https://hypothesis.readthedocs.io/en/latest/index.html)
-*
-  [QuickCheck: A Lightweight Tool for Random Testing of Haskell Programs by Koen Claessen & John Hughes (1999)](https://www.researchgate.net/publication/2449938_QuickCheck_A_Lightweight_Tool_for_Random_Testing_of_Haskell_Programs)
+* [QuickCheck: A Lightweight Tool for Random Testing of Haskell Programs by Koen Claessen & John Hughes (1999)](https://www.researchgate.net/publication/2449938_QuickCheck_A_Lightweight_Tool_for_Random_Testing_of_Haskell_Programs)
   (PDF)
 * [QuickCheck: As a test set generator](https://wiki.haskell.org/QuickCheck_as_a_test_set_generator)
 * [QuickCheck: A tutorial on generators](https://www.stackbuilders.com/news/a-quickcheck-tutorial-generators)
 * [QuickCheck: Automatic testing of Haskell programs](http://hackage.haskell.org/package/QuickCheck)
 * [QuickCheck (Wikipedia)](https://en.wikipedia.org/wiki/QuickCheck)
-*
-  [Random Testing by Richard Hamlet (1994)](https://pdfs.semanticscholar.org/b02a/67acd634cf04a1c7ca3fa58975c3d6ff1c4b.pdf)
+* [Random Testing by Richard Hamlet (1994)](https://pdfs.semanticscholar.org/b02a/67acd634cf04a1c7ca3fa58975c3d6ff1c4b.pdf)
   (PDF)
 * [Simple Smalltalk Testing: With Patterns by Kent Beck (1989)](https://web.archive.org/web/20150315073817/http://www.xprogramming.com/testfram.htm)
-*
-  [Source for this article](https://github.com/frankhjung/article-random-quickcheck)
+* [Source for this article](https://github.com/frankhjung/article-random-quickcheck)
   (GitHub)
